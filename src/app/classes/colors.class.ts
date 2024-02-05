@@ -18,6 +18,6 @@ export default class ColorsClasses {
   // Secondary
   public static bgColor = 'bg-gray-700';
 
-  public static textBdColor = 'text-gray-700';
+  public static textBgColor = 'text-gray-700';
 
 }

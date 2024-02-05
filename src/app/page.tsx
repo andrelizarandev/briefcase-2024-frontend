@@ -231,7 +231,7 @@ function ExperienceElement (props:ExperienceData) {
 
     <div className='rounded border'>
 
-      <div className='flex flex-col md:flex-row items-center md:justify-between text-center border-b p-3'>
+      <div className={`flex flex-col md:flex-row items-center md:justify-between text-center border-b p-3 bg-white ${ColorsClasses.textBgColor}`}>
 
         <h4 className='font-semibold mb-2 md:mb-0'>{props.titulo}</h4>
 
