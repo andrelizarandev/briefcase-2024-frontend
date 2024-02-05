@@ -145,15 +145,15 @@ function EducationElement (props:EducationData) {
 
   return (
 
-    <div className='rounded border flex flex p-3 items-center justify-between'>
+    <div className='rounded border flex flex-col md:flex-row flex p-3 items-center justify-between'>
 
-      <div>
+      <div className='text-center md:text-start pb-2 md:pb-0'>
 
         <h4 className={`font-semibold`}>{props.titulo}</h4>
 
         <p>{props.career}</p>
 
-        <span>{props.periodo}</span>
+        <span className='text-sm'>{props.periodo}</span>
 
       </div>
 
@@ -342,8 +342,6 @@ const technologiesData:TechnologyData[] = [
 
   { name:'Extras', icon:<PlusIcon className='h-4 w-4'/> },
   { name:'Figma' },
-
-
 
 ];
 
