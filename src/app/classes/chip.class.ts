@@ -8,9 +8,6 @@ export default class ChipClasses {
   public static primaryChip =
     `${ColorsClasses.bgPrimaryColor} ${this.commonProps}`;
 
-  public static secondaryChip =
-    `${ColorsClasses.bgSecondaryColor} ${this.commonProps}`;
-
   public static whiteChip = 
     `border-white border ${this.commonProps}`;
 
