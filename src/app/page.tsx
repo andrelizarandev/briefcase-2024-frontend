@@ -73,23 +73,30 @@ function TopBar () {
 
         <div className='flex gap-x-3'>
 
-          {/* <button className={`hidden md:flex ${ButtonClasses.primaryButton}`}>
-            <>Cambiar Idioma</>
-            <LanguageIcon className='h-4 w-4'/>
-          </button>
+          <a 
+            download='cv-andre-lizaran.pdf'
+            href={aboutMeData.downloadCvLink} 
+            target='_blank' 
+            rel='noreferrer' 
+            className='hidden md:flex'
+          >
+            <button className={ButtonClasses.primaryButton}>
+              <>{aboutMeData.downloadCv}</>
+              <ArrowDownTrayIcon className='h-4 w-4'/>
+            </button>
+          </a>
 
-          <button className={`flex md:hidden ${ButtonClasses.iconButton}`}>
-            <LanguageIcon className='h-4 w-4'/>
-          </button> */}
-
-          <button className={`hidden md:flex ${ButtonClasses.primaryButton}`}>
-            <>{aboutMeData.downloadCv}</>
-            <ArrowDownTrayIcon className='h-4 w-4'/>
-          </button>
-
-          <button className={`flex md:hidden ${ButtonClasses.iconButton}`}>
-            <ArrowDownTrayIcon className='h-4 w-4'/>
-          </button>
+          <a 
+            download='cv-andre-lizaran.pdf'
+            href={aboutMeData.downloadCvLink} 
+            target='_blank'
+            rel='noreferrer' 
+            className='flex md:hidden'
+          >
+            <button className={ButtonClasses.iconButton}>
+              <ArrowDownTrayIcon className='h-4 w-4'/>
+            </button>
+          </a>
 
         </div>
 
@@ -292,7 +299,8 @@ function ContactMeElement (props:ContactMeData) {
 const aboutMeData = {
   subtitle:'Frontend / Mobile Developer',
   description:'Developer focused on practicality and efficiency for the user, with the implementation of user-friendly and functional interfaces. Working in web and mobile application development for the past 3 years.',
-  downloadCv:'Download CV'
+  downloadCv:'Download CV',
+  downloadCvLink:'/docs/cv-andre-lizaran.pdf'
 }
 
 const titlesData = {
