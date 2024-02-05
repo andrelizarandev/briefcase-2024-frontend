@@ -29,7 +29,7 @@ export default function page() {
 
       <TopBar/>
 
-      <div className='w-full min-h-screen flex flex-col font-sans bg-gray-700 text-white pt-20'>
+      <div className={`w-full min-h-screen flex flex-col font-sans ${ColorsClasses.bgColor} text-white pt-20`}>
         
         <div className={`h-full flex flex-col gap-y-4 p-4 ${globalPaddingX}`}>
 
@@ -46,6 +46,8 @@ export default function page() {
         </div>
 
       </div>
+
+      <Footer/>
 
     </>
 
@@ -288,6 +290,20 @@ function ContactMeElement (props:ContactMeData) {
       </button>
 
     </a>
+
+  )
+
+}
+
+function Footer () {
+
+  return (
+
+    <div className={`border-t py-4 ${ColorsClasses.bgColor} text-white`}>
+
+      <p className='text-center'>André Lizarán - 2021</p>
+
+    </div>
 
   )
 

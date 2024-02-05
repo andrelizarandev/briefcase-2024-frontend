@@ -16,16 +16,8 @@ export default class ColorsClasses {
   public static borderDarkerPrimaryColor = 'border-blue-700';
 
   // Secondary
-  public static textSecondaryColor = 'text-yellow-500';
+  public static bgColor = 'bg-gray-700';
 
-  public static textDarkerSecondaryColor = 'text-yellow-600';
-
-  public static bgSecondaryColor = 'bg-yellow-500';
-
-  public static bgDarkerSecondaryColor = 'bg-yellow-600';
-
-  public static bgDarkerSecondaryColorHover = 'hover:bg-yellow-600';
-
-  public static borderSecondaryColor = 'border-yellow-500';
+  public static textBdColor = 'text-gray-700';
 
 }
