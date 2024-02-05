@@ -1,3 +1,5 @@
+'use client';
+
 // Modules
 import React, { ReactNode } from 'react';
 
@@ -6,6 +8,9 @@ import ChipClasses from './classes/chip.class';
 import TextClasses from './classes/text.class';
 import ButtonClasses from './classes/button.class';
 import ColorsClasses from './classes/colors.class';
+
+// Hooks
+import useAnalytics from './analytics/analytics.index';
 
 // Icons
 import { 
@@ -59,6 +64,8 @@ const globalPaddingX = 'md:px-20 lg:px-40 xl:px-80';
 
 function TopBar () {
 
+  const { downloadCv } = useAnalytics();
+
   return (
 
     <div className={`z-10 h-20 text-white fixed w-full flex flex-col justify-center ${ColorsClasses.bgPrimaryColor}`}>
@@ -81,6 +88,7 @@ function TopBar () {
             target='_blank' 
             rel='noreferrer' 
             className='hidden md:flex'
+            onClick={downloadCv}
           >
             <button className={ButtonClasses.primaryButton}>
               <>{aboutMeData.downloadCv}</>
@@ -94,6 +102,7 @@ function TopBar () {
             target='_blank'
             rel='noreferrer' 
             className='flex md:hidden'
+            onClick={downloadCv}
           >
             <button className={ButtonClasses.iconButton}>
               <ArrowDownTrayIcon className='h-4 w-4'/>
@@ -257,6 +266,35 @@ function ExperienceElement (props:ExperienceData) {
 
 function ContactMeContainer () {
 
+  const { openLinkedin, openGithub, openEmail, openWhatsapp } = useAnalytics();
+
+  const contactMeList:ContactMeData[] = [
+    { 
+      title:'LinkedIn', 
+      link:'https://www.linkedin.com/in/jes%C3%BAs-andr%C3%A9-lizar%C3%A1n-blanco-7342681ab/',
+      icon:<BriefcaseIcon className='h-4 w-4'/>,
+      action:openLinkedin
+    },
+    { 
+      title:'GitHub', 
+      link:'https://github.com/andrelizarandev',
+      icon:<CodeBracketIcon className='h-4 w-4'/>,
+      action:openGithub
+    },
+    { 
+      title:'Email', 
+      link:'mailto:andrelizarandev@gmail.com',
+      icon:<AtSymbolIcon className='h-4 w-4'/>,
+      action:openEmail
+    },
+    { 
+      title:'Whatsapp', 
+      link:'https://wa.me/2293460202',
+      icon:<ChatBubbleLeftIcon className='h-4 w-4'/>,
+      action:openWhatsapp
+    },
+  ]
+
   return (
 
     <div className='flex flex-col gap-y-2'>
@@ -279,7 +317,7 @@ function ContactMeElement (props:ContactMeData) {
 
   return (
 
-    <a href={props.link} target='_blank' rel='noreferrer'>
+    <a href={props.link} target='_blank' rel='noreferrer' onClick={props.action}>
 
       <button className={ButtonClasses.whiteButton}>
 
@@ -441,27 +479,5 @@ type ContactMeData = {
   title:string;
   link:string;
   icon:ReactNode;
+  action:() => void;
 }
-
-const contactMeList:ContactMeData[] = [
-  { 
-    title:'LinkedIn', 
-    link:'https://www.linkedin.com/in/jes%C3%BAs-andr%C3%A9-lizar%C3%A1n-blanco-7342681ab/',
-    icon:<BriefcaseIcon className='h-4 w-4'/>
-  },
-  { 
-    title:'GitHub', 
-    link:'https://github.com/andrelizarandev',
-    icon:<CodeBracketIcon className='h-4 w-4'/>
-  },
-  { 
-    title:'Email', 
-    link:'mailto:andrelizarandev@gmail.com',
-    icon:<AtSymbolIcon className='h-4 w-4'/>
-  },
-  { 
-    title:'Whatsapp', 
-    link:'https://wa.me/2293460202',
-    icon:<ChatBubbleLeftIcon className='h-4 w-4'/>
-  },
-]
