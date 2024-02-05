@@ -323,8 +323,8 @@ const technologiesData:TechnologyData[] = [
   { name:'Mui' },
   { name:'Tailwind CSS' },
   { name:'Angular' },
-  { name:'Prime NG' },
   { name:'Rxng' },
+  { name:'Prime NG' },
   
   { name:'Backend', icon:<ServerStackIcon className='h-4 w-4'/> },
   { name:'Express JS' },
