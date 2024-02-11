@@ -16,8 +16,8 @@ export default class ColorsClasses {
   public static borderDarkerPrimaryColor = 'border-blue-700';
 
   // Secondary
-  public static bgColor = 'bg-gray-700';
+  public static bgColor = 'bg-neutral-800';
 
-  public static textBgColor = 'text-gray-700';
+  public static textBgColor = 'text-neutral-800';
 
 }
