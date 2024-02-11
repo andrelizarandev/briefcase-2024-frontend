@@ -2,6 +2,7 @@
 
 // Modules
 import React, { ReactNode } from 'react';
+import { twMerge } from 'tailwind-merge';
 
 // Classes
 import ChipClasses from './classes/chip.class';
@@ -34,7 +35,7 @@ export default function page() {
 
       <TopBar/>
 
-      <div className={`w-full min-h-screen flex flex-col font-sans ${ColorsClasses.bgColor} text-white pt-20`}>
+      <div className={twMerge(`w-full min-h-screen flex flex-col font-sans bg-${ColorsClasses.backgroundColor} text-white pt-20`)}>
         
         <div className={`h-full flex flex-col gap-y-4 p-4 ${globalPaddingX}`}>
 
@@ -68,9 +69,9 @@ function TopBar () {
 
   return (
 
-    <div className={`z-10 h-20 text-white fixed w-full flex flex-col justify-center ${ColorsClasses.bgPrimaryColor}`}>
+    <div className={twMerge(`z-10 h-20 text-white fixed w-full flex flex-col justify-center bg-${ColorsClasses.primaryColor}`)}>
 
-      <div className={`flex flex-row justify-between items-center px-4 ${globalPaddingX}`}>
+      <div className={twMerge(`flex flex-row justify-between items-center px-4 ${globalPaddingX}`)}>
 
         <div>
 
@@ -240,7 +241,7 @@ function ExperienceElement (props:ExperienceData) {
 
     <div className='rounded border'>
 
-      <div className={`flex flex-col md:flex-row items-center md:justify-between text-center border-b p-3 bg-white ${ColorsClasses.textBgColor}`}>
+      <div className={twMerge(`flex flex-col md:flex-row items-center md:justify-between text-center border-b p-3 bg-white text-${ColorsClasses.backgroundColor}`)}>
 
         <h4 className='font-semibold mb-2 md:mb-0'>{props.titulo}</h4>
 
@@ -337,7 +338,7 @@ function Footer () {
 
   return (
 
-    <div className={`border-t py-4 ${ColorsClasses.bgColor} text-white`}>
+    <div className={twMerge(`border-t py-4 bg-${ColorsClasses.backgroundColor} text-white`)}>
 
       <p className='text-center'>André Lizarán - 2021</p>
 
@@ -384,8 +385,9 @@ const technologiesData:TechnologyData[] = [
   { name:'Redux' },
   { name:'Mui' },
   { name:'Tailwind CSS' },
+  { name:'Shadcn UI' },
   { name:'Angular' },
-  { name:'Rxng' },
+  { name:'NgRx' },
   { name:'Prime NG' },
   
   { name:'Backend', icon:<ServerStackIcon className='h-4 w-4'/> },

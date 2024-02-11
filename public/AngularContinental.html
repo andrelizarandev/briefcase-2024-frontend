@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://localhost:4200/produccion -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <script type="module" src="./AngularContinental_files/client"></script>
+
+  
+  <title>AngularContinental</title>
+  <!--<base href="/">--><base href=".">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="http://localhost:4200/favicon.ico">
+<link rel="stylesheet" href="./AngularContinental_files/styles.css"><style>
+
+/*# sourceMappingURL=app.component.css.map */</style><style>
+
+/*# sourceMappingURL=produccion.component.css.map */</style><style>
+
+.navigation-container[_ngcontent-ng-c3816714542] {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.top-bar[_ngcontent-ng-c3816714542] {
+  height: 6vh;
+  background-color: var(--surface-600);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.main-container[_ngcontent-ng-c3816714542] {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.sidebar-container[_ngcontent-ng-c3816714542] {
+  min-height: 94vh;
+  width: 300px;
+  background-color: var(--surface-300);
+  display: flex;
+  flex-direction: column;
+}
+.sidebar-padding-container[_ngcontent-ng-c3816714542] {
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.main-content-container[_ngcontent-ng-c3816714542] {
+  width: 100%;
+  min-height: 94vh;
+  overflow-y: auto;
+  background-color: var(--bluegray-50);
+}
+.main-content-padding-container[_ngcontent-ng-c3816714542] {
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+/*# sourceMappingURL=navigation-container.component.css.map */</style><style>@layer primeng{.p-datatable{position:relative}.p-datatable>.p-datatable-wrapper{overflow:auto}.p-datatable-table{border-spacing:0px;width:100%}.p-datatable .p-sortable-column{cursor:pointer;-webkit-user-select:none;user-select:none}.p-datatable .p-sortable-column .p-column-title,.p-datatable .p-sortable-column .p-sortable-column-icon,.p-datatable .p-sortable-column .p-sortable-column-badge{vertical-align:middle}.p-datatable .p-sortable-column .p-icon-wrapper{display:inline}.p-datatable .p-sortable-column .p-sortable-column-badge{display:inline-flex;align-items:center;justify-content:center}.p-datatable-hoverable-rows .p-selectable-row{cursor:pointer}.p-datatable-scrollable>.p-datatable-wrapper{position:relative}.p-datatable-scrollable-table>.p-datatable-thead{position:sticky;top:0;z-index:2}.p-datatable-scrollable-table>.p-datatable-frozen-tbody{position:sticky;z-index:1}.p-datatable-scrollable-table>.p-datatable-tfoot{position:sticky;bottom:0;z-index:1}.p-datatable-scrollable .p-frozen-column{position:sticky;background:inherit;z-index:1}.p-datatable-scrollable th.p-frozen-column{z-index:1}.p-datatable-flex-scrollable{display:flex;flex-direction:column;height:100%}.p-datatable-flex-scrollable>.p-datatable-wrapper{display:flex;flex-direction:column;flex:1;height:100%}.p-datatable-scrollable-table>.p-datatable-tbody>.p-rowgroup-header{position:sticky;z-index:2}.p-datatable-resizable-table>.p-datatable-thead>tr>th,.p-datatable-resizable-table>.p-datatable-tfoot>tr>td,.p-datatable-resizable-table>.p-datatable-tbody>tr>td{overflow:hidden;white-space:nowrap}.p-datatable-resizable-table>.p-datatable-thead>tr>th.p-resizable-column:not(.p-frozen-column){background-clip:padding-box;position:relative}.p-datatable-resizable-table-fit>.p-datatable-thead>tr>th.p-resizable-column:last-child .p-column-resizer{display:none}.p-datatable .p-column-resizer{display:block;position:absolute!important;top:0;right:0;margin:0;width:.5rem;height:100%;padding:0;cursor:col-resize;border:1px solid transparent}.p-datatable .p-column-resizer-helper{width:1px;position:absolute;z-index:10;display:none}.p-datatable .p-row-editor-init,.p-datatable .p-row-editor-save,.p-datatable .p-row-editor-cancel,.p-datatable .p-row-toggler{display:inline-flex;align-items:center;justify-content:center;overflow:hidden;position:relative}.p-datatable-reorder-indicator-up,.p-datatable-reorder-indicator-down{position:absolute}.p-datatable-reorderablerow-handle,[pReorderableColumn]{cursor:move}.p-datatable .p-datatable-loading-overlay{position:absolute;display:flex;align-items:center;justify-content:center;z-index:3}.p-column-filter-row{display:flex;align-items:center;width:100%}.p-column-filter-menu{display:inline-flex}.p-column-filter-row p-columnfilterformelement{flex:1 1 auto;width:1%}.p-column-filter-menu-button,.p-column-filter-clear-button{display:inline-flex;justify-content:center;align-items:center;cursor:pointer;text-decoration:none;overflow:hidden;position:relative}.p-column-filter-overlay{position:absolute;top:0;left:0}.p-column-filter-row-items{margin:0;padding:0;list-style:none}.p-column-filter-row-item{cursor:pointer}.p-column-filter-add-button,.p-column-filter-remove-button{justify-content:center}.p-column-filter-add-button .p-button-label,.p-column-filter-remove-button .p-button-label{flex-grow:0}.p-column-filter-buttonbar{display:flex;align-items:center;justify-content:space-between}.p-column-filter-buttonbar .p-button{width:auto}.p-datatable-tbody>tr>td>.p-column-title{display:none}.p-datatable-scroller-spacer{display:flex}.p-datatable .p-scroller .p-scroller-loading{transform:none!important;min-height:0;position:sticky;top:0;left:0}}
+</style></head>
+<body>
+  <app-root _nghost-ng-c3984273398="" ng-version="17.1.0"><router-outlet _ngcontent-ng-c3984273398=""></router-outlet><app-produccion _nghost-ng-c202259540=""><app-navigation-container _ngcontent-ng-c202259540="" _nghost-ng-c3816714542=""><div _ngcontent-ng-c3816714542="" class="navigation-container"><nav _ngcontent-ng-c3816714542="" class="top-bar"><h5 _ngcontent-ng-c3816714542="" class="c-white">CONTINENTAL</h5></nav><div _ngcontent-ng-c3816714542="" class="main-container"><nav _ngcontent-ng-c3816714542="" class="sidebar-container"><div _ngcontent-ng-c3816714542="" class="sidebar-padding-container"><h3 _ngcontent-ng-c3816714542="" style="color: var(--surface-600);">Menú</h3><p-button _ngcontent-ng-c3816714542="" size="small" severity="secondary" class="p-element" ng-reflect-size="small" ng-reflect-severity="secondary" ng-reflect-label="Usuarios" ng-reflect-icon="pi pi-users" ng-reflect-rounded="true"><button pripple="" class="p-ripple p-element p-button p-component p-button-secondary p-button-rounded p-button-sm" ng-reflect-ng-class="[object Object]" type="button" data-pc-name="button" data-pc-section="root"><!--bindings={}--><!--bindings={
+  "ng-reflect-ng-if": "false"
+}--><span ng-reflect-ng-class="[object Object]" data-pc-section="icon" class="pi pi-users p-button-icon p-button-icon-left"></span><!--bindings={
+  "ng-reflect-ng-if": "true"
+}--><!--bindings={
+  "ng-reflect-ng-if": "false"
+}--><!--ng-container--><!--bindings={
+  "ng-reflect-ng-if": "true"
+}--><span class="p-button-label" aria-hidden="false" data-pc-section="label">Usuarios</span><!--bindings={
+  "ng-reflect-ng-if": "Usuarios"
+}--><!--bindings={}--></button></p-button><p-button _ngcontent-ng-c3816714542="" size="small" severity="secondary" class="p-element" ng-reflect-size="small" ng-reflect-severity="secondary" ng-reflect-label="Programas" ng-reflect-icon="pi pi-book" ng-reflect-rounded="true"><button pripple="" class="p-ripple p-element p-button p-component p-button-secondary p-button-rounded p-button-sm" ng-reflect-ng-class="[object Object]" type="button" data-pc-name="button" data-pc-section="root"><!--bindings={}--><!--bindings={
+  "ng-reflect-ng-if": "false"
+}--><span ng-reflect-ng-class="[object Object]" data-pc-section="icon" class="pi pi-book p-button-icon p-button-icon-left"></span><!--bindings={
+  "ng-reflect-ng-if": "true"
+}--><!--bindings={
+  "ng-reflect-ng-if": "false"
+}--><!--ng-container--><!--bindings={
+  "ng-reflect-ng-if": "true"
+}--><span class="p-button-label" aria-hidden="false" data-pc-section="label">Programas</span><!--bindings={
+  "ng-reflect-ng-if": "Programas"
+}--><!--bindings={}--></button></p-button><p-button _ngcontent-ng-c3816714542="" size="small" severity="secondary" class="p-element" ng-reflect-size="small" ng-reflect-severity="secondary" ng-reflect-label="Periodos" ng-reflect-icon="pi pi-calendar" ng-reflect-rounded="true"><button pripple="" class="p-ripple p-element p-button p-component p-button-secondary p-button-rounded p-button-sm" ng-reflect-ng-class="[object Object]" type="button" data-pc-name="button" data-pc-section="root"><!--bindings={}--><!--bindings={
+  "ng-reflect-ng-if": "false"
+}--><span ng-reflect-ng-class="[object Object]" data-pc-section="icon" class="pi pi-calendar p-button-icon p-button-icon-left"></span><!--bindings={
+  "ng-reflect-ng-if": "true"
+}--><!--bindings={
+  "ng-reflect-ng-if": "false"
+}--><!--ng-container--><!--bindings={
+  "ng-reflect-ng-if": "true"
+}--><span class="p-button-label" aria-hidden="false" data-pc-section="label">Periodos</span><!--bindings={
+  "ng-reflect-ng-if": "Periodos"
+}--><!--bindings={}--></button></p-button><p-button _ngcontent-ng-c3816714542="" size="small" severity="secondary" class="p-element" ng-reflect-size="small" ng-reflect-severity="secondary" ng-reflect-label="Roles" ng-reflect-icon="pi pi-list" ng-reflect-rounded="true"><button pripple="" class="p-ripple p-element p-button p-component p-button-secondary p-button-rounded p-button-sm" ng-reflect-ng-class="[object Object]" type="button" data-pc-name="button" data-pc-section="root"><!--bindings={}--><!--bindings={
+  "ng-reflect-ng-if": "false"
+}--><span ng-reflect-ng-class="[object Object]" data-pc-section="icon" class="pi pi-list p-button-icon p-button-icon-left"></span><!--bindings={
+  "ng-reflect-ng-if": "true"
+}--><!--bindings={
+  "ng-reflect-ng-if": "false"
+}--><!--ng-container--><!--bindings={
+  "ng-reflect-ng-if": "true"
+}--><span class="p-button-label" aria-hidden="false" data-pc-section="label">Roles</span><!--bindings={
+  "ng-reflect-ng-if": "Roles"
+}--><!--bindings={}--></button></p-button><p-button _ngcontent-ng-c3816714542="" size="small" severity="secondary" class="p-element" ng-reflect-size="small" ng-reflect-severity="secondary" ng-reflect-label="Diseño de Curso" ng-reflect-icon="pi pi-pencil" ng-reflect-rounded="true"><button pripple="" class="p-ripple p-element p-button p-component p-button-secondary p-button-rounded p-button-sm" ng-reflect-ng-class="[object Object]" type="button" data-pc-name="button" data-pc-section="root"><!--bindings={}--><!--bindings={
+  "ng-reflect-ng-if": "false"
+}--><span ng-reflect-ng-class="[object Object]" data-pc-section="icon" class="pi pi-pencil p-button-icon p-button-icon-left"></span><!--bindings={
+  "ng-reflect-ng-if": "true"
+}--><!--bindings={
+  "ng-reflect-ng-if": "false"
+}--><!--ng-container--><!--bindings={
+  "ng-reflect-ng-if": "true"
+}--><span class="p-button-label" aria-hidden="false" data-pc-section="label">Diseño de Curso</span><!--bindings={
+  "ng-reflect-ng-if": "Diseño de Curso"
+}--><!--bindings={}--></button></p-button><p-button _ngcontent-ng-c3816714542="" size="small" severity="secondary" class="p-element" ng-reflect-size="small" ng-reflect-severity="secondary" ng-reflect-label="Producción" ng-reflect-icon="pi pi-cog" ng-reflect-rounded="true"><button pripple="" class="p-ripple p-element p-button p-component p-button-secondary p-button-rounded p-button-sm" ng-reflect-ng-class="[object Object]" type="button" data-pc-name="button" data-pc-section="root"><!--bindings={}--><!--bindings={
+  "ng-reflect-ng-if": "false"
+}--><span ng-reflect-ng-class="[object Object]" data-pc-section="icon" class="pi pi-cog p-button-icon p-button-icon-left"></span><!--bindings={
+  "ng-reflect-ng-if": "true"
+}--><!--bindings={
+  "ng-reflect-ng-if": "false"
+}--><!--ng-container--><!--bindings={
+  "ng-reflect-ng-if": "true"
+}--><span class="p-button-label" aria-hidden="false" data-pc-section="label">Producción</span><!--bindings={
+  "ng-reflect-ng-if": "Producción"
+}--><!--bindings={}--></button></p-button><!--container--></div></nav><main _ngcontent-ng-c3816714542="" class="main-content-container"><div _ngcontent-ng-c3816714542="" class="main-content-padding-container"><div _ngcontent-ng-c202259540="" class="h-flex-justify-between"><h3 _ngcontent-ng-c202259540="" class="title-color">Producción</h3></div><p-table _ngcontent-ng-c202259540="" class="p-element" ng-reflect-value="[object Object],[object Object"><div ng-reflect-ng-class="[object Object]" id="pn_id_1" class="p-datatable p-component"><!--bindings={}--><!--bindings={}--><!--bindings={}--><div class="p-datatable-wrapper" ng-reflect-ng-style="[object Object]"><!--bindings={}--><table role="table" ng-reflect-ng-class="[object Object]" id="pn_id_1-table" class="p-datatable-table"><!--bindings={
+  "ng-reflect-ng-template-outlet-context": "[object Object]"
+}--><thead role="rowgroup" class="p-datatable-thead"><tr _ngcontent-ng-c202259540=""><th _ngcontent-ng-c202259540="">PLAN</th><th _ngcontent-ng-c202259540="">EAP</th><th _ngcontent-ng-c202259540="">TIPO_ASIGNATURA</th><th _ngcontent-ng-c202259540="">FACULTAD</th><th _ngcontent-ng-c202259540="">MODALIDAD</th><th _ngcontent-ng-c202259540="">FORMATO P</th><th _ngcontent-ng-c202259540="">FORMATO_SP</th><th _ngcontent-ng-c202259540="">FORMATO_D</th><th _ngcontent-ng-c202259540="">TIPO_DISENO</th><th _ngcontent-ng-c202259540="">CICLO</th><th _ngcontent-ng-c202259540="">DURACION_SEMANAS</th></tr><!--bindings={
+  "ng-reflect-ng-template-outlet-context": "[object Object]"
+}--></thead><!--bindings={}--><tbody role="rowgroup" class="p-element p-datatable-tbody" ng-reflect-value="[object Object],[object Object" ng-reflect-template="[object Object]" ng-reflect-scroller-options="[object Object]"><!--bindings={}--><tr _ngcontent-ng-c202259540=""><td _ngcontent-ng-c202259540="">Plan 1</td><td _ngcontent-ng-c202259540="">EAP 1</td><td _ngcontent-ng-c202259540="">Tipo Asignatura 1</td><td _ngcontent-ng-c202259540="">Facultad 1</td><td _ngcontent-ng-c202259540="">Modalidad 1</td><td _ngcontent-ng-c202259540="">Formato P 1</td><td _ngcontent-ng-c202259540="">Formato SP 1</td><td _ngcontent-ng-c202259540="">Formato D 1</td><td _ngcontent-ng-c202259540="">Tipo Diseño 1</td><td _ngcontent-ng-c202259540="">Ciclo 1</td><td _ngcontent-ng-c202259540="">Duración Semanas 1</td></tr><!--bindings={
+  "ng-reflect-ng-template-outlet-context": "[object Object]"
+}--><!--ng-container--><!--bindings={
+  "ng-reflect-ng-if": "true"
+}--><!--bindings={
+  "ng-reflect-ng-if": "false"
+}--><!--bindings={}--><!--bindings={}--><tr _ngcontent-ng-c202259540=""><td _ngcontent-ng-c202259540="">Plan 1</td><td _ngcontent-ng-c202259540="">EAP 1</td><td _ngcontent-ng-c202259540="">Tipo Asignatura 1</td><td _ngcontent-ng-c202259540="">Facultad 1</td><td _ngcontent-ng-c202259540="">Modalidad 1</td><td _ngcontent-ng-c202259540="">Formato P 1</td><td _ngcontent-ng-c202259540="">Formato SP 1</td><td _ngcontent-ng-c202259540="">Formato D 1</td><td _ngcontent-ng-c202259540="">Tipo Diseño 1</td><td _ngcontent-ng-c202259540="">Ciclo 1</td><td _ngcontent-ng-c202259540="">Duración Semanas 1</td></tr><!--bindings={
+  "ng-reflect-ng-template-outlet-context": "[object Object]"
+}--><!--ng-container--><!--bindings={
+  "ng-reflect-ng-if": "true"
+}--><!--bindings={
+  "ng-reflect-ng-if": "false"
+}--><!--bindings={}--><!--bindings={}--><tr _ngcontent-ng-c202259540=""><td _ngcontent-ng-c202259540="">Plan 1</td><td _ngcontent-ng-c202259540="">EAP 1</td><td _ngcontent-ng-c202259540="">Tipo Asignatura 1</td><td _ngcontent-ng-c202259540="">Facultad 1</td><td _ngcontent-ng-c202259540="">Modalidad 1</td><td _ngcontent-ng-c202259540="">Formato P 1</td><td _ngcontent-ng-c202259540="">Formato SP 1</td><td _ngcontent-ng-c202259540="">Formato D 1</td><td _ngcontent-ng-c202259540="">Tipo Diseño 1</td><td _ngcontent-ng-c202259540="">Ciclo 1</td><td _ngcontent-ng-c202259540="">Duración Semanas 1</td></tr><!--bindings={
+  "ng-reflect-ng-template-outlet-context": "[object Object]"
+}--><!--ng-container--><!--bindings={
+  "ng-reflect-ng-if": "true"
+}--><!--bindings={
+  "ng-reflect-ng-if": "false"
+}--><!--bindings={}--><!--bindings={
+  "ng-reflect-ng-for-track-by": "(index, item) => item"
+}--><!--ng-container--><!--bindings={
+  "ng-reflect-ng-if": "true"
+}--><!--bindings={}--><!--bindings={}--><!--bindings={}--><!--bindings={
+  "ng-reflect-ng-if": "false"
+}--></tbody><!--bindings={}--><!--bindings={}--></table><!--bindings={
+  "ng-reflect-ng-template-outlet-context": "[object Object]"
+}--><!--ng-container--><!--bindings={
+  "ng-reflect-ng-if": "true"
+}--><!--container--></div><!--bindings={}--><!--bindings={}--><!--bindings={}--><!--bindings={}--><!--bindings={}--></div></p-table></div></main></div></div></app-navigation-container></app-produccion><!--container--></app-root>
+<script src="./AngularContinental_files/polyfills.js" type="module"></script><script src="./AngularContinental_files/main.js" type="module"></script>
+
+</body></html>
