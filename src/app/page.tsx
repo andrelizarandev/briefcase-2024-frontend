@@ -113,7 +113,7 @@ function TopBar () {
             onClick={downloadCv}
           >
             <button className={ButtonClasses.iconButton}>
-              <ArrowDownTrayIcon className='h-4 w-4'/>
+              <ArrowDownTrayIcon className='h-6 w-6'/>
             </button>
           </a>
 
