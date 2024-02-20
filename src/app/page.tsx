@@ -26,7 +26,7 @@ import {
   PlusIcon
 } from '@heroicons/react/16/solid';
 
-export default function page() {
+export default function page () {
 
   return (
 
@@ -68,15 +68,23 @@ function TopBar () {
 
   return (
 
-    <div className={`z-10 h-20 text-white fixed w-full flex flex-col justify-center ${ColorsClasses.bgPrimaryColor}`}>
+    <div className={`z-10 h-20 text-white fixed w-full flex flex-col justify-center ${ColorsClasses.bgColor} ${ColorsClasses.borderBottomGrayColor}`}>
 
       <div className={`flex flex-row justify-between items-center px-4 ${globalPaddingX}`}>
 
-        <div>
+        <div className='flex flex-row gap-x-4 items-center'>
 
-          <h1 className={TextClasses.sectionTitle}>André Lizarán</h1>
+          <div className={`${ColorsClasses.borderGrayColor} w-10 h-10 rounded-full`}>
 
-          <h2 className='font-semibold'>{aboutMeData.subtitle}</h2>
+          </div>
+
+          <div>
+
+            <h1 className={TextClasses.sectionTitle}>André Lizarán</h1>
+
+            <h2 className='font-semibold'>{aboutMeData.subtitle}</h2>
+
+          </div>
 
         </div>
 
@@ -91,7 +99,7 @@ function TopBar () {
             onClick={downloadCv}
           >
             <button className={ButtonClasses.primaryButton}>
-              <>{aboutMeData.downloadCv}</>
+              {aboutMeData.downloadCv}
               <ArrowDownTrayIcon className='h-4 w-4'/>
             </button>
           </a>
@@ -163,7 +171,7 @@ function EducationElement (props:EducationData) {
 
   return (
 
-    <div className='rounded border flex flex-col md:flex-row flex p-3 items-center justify-between'>
+    <div className={`rounded border flex flex-col md:flex-row flex p-3 items-center justify-between text-white ${ColorsClasses.borderGrayColor}`}>
 
       <div className='text-center md:text-start pb-2 md:pb-0'>
 
@@ -178,7 +186,7 @@ function EducationElement (props:EducationData) {
       <img 
         src={props.logo} 
         alt='itver-logo' 
-        className='w-20 bg-white rounded p-3'/>
+        className={`w-20 rounded p-3 ${ColorsClasses.bgGrayColor}`}/>
 
     </div>
 
@@ -238,9 +246,9 @@ function ExperienceElement (props:ExperienceData) {
 
   return (
 
-    <div className='rounded border'>
+    <div className={`rounded ${ColorsClasses.borderGrayColor}`}>
 
-      <div className={`flex flex-col md:flex-row items-center md:justify-between text-center border-b p-3 bg-white ${ColorsClasses.textBgColor}`}>
+      <div className={`p-3 flex flex-col md:flex-row items-center md:justify-between text-center text-white ${ColorsClasses.borderBottomGrayColor}`}>
 
         <h4 className='font-semibold mb-2 md:mb-0'>{props.titulo}</h4>
 
@@ -319,7 +327,7 @@ function ContactMeElement (props:ContactMeData) {
 
     <a href={props.link} target='_blank' rel='noreferrer' onClick={props.action}>
 
-      <button className={ButtonClasses.whiteButton}>
+      <button className={ButtonClasses.primaryButton}>
 
         {props.title}
 
@@ -337,7 +345,7 @@ function Footer () {
 
   return (
 
-    <div className={`border-t py-4 ${ColorsClasses.bgColor} text-white`}>
+    <div className={`${ColorsClasses.borderTopGrayColor} ${ColorsClasses.bgColor} py-4 text-white`}>
 
       <p className='text-center'>André Lizarán - 2021</p>
 
@@ -382,7 +390,7 @@ const technologiesData:TechnologyData[] = [
   { name:'React' },
   { name:'Next JS' },
   { name:'Redux' },
-  { name:'Mui' },
+  { name:'MUI' },
   { name:'Tailwind CSS' },
   { name:'Angular' },
   { name:'Rxng' },
@@ -416,7 +424,7 @@ type ExperienceData = {
 
 const blauCorpExperience: ExperienceData = {
   titulo: "Blau Corp / Home Office / Frontend, Backend, Mobile Developer",
-  periodo: "2021 - Actual",
+  periodo: "2021 - Current",
   activities: [
     "Creation and maintenance of a web platform in React",
     "Generation of CSV files from the platform",
@@ -445,7 +453,7 @@ const typsaExperience: ExperienceData = {
  
 const continentalExperience: ExperienceData = {
   titulo: "Continental / Home Office / Frontend Developer",
-  periodo: "2024 - Actual",
+  periodo: "2024 - Current",
   activities: [
     "Angular Platform Creation",
     "Automation for folder creation from the platform on GDrive",
