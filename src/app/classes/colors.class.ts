@@ -15,21 +15,21 @@ export default class ColorsClasses {
 
   public static borderDarkerPrimaryColor = 'border border-blue-800';
 
-  // Secondary
-  public static lighterBgColor = 'bg-zinc-800';
+  // Bg
+  public static lighterBgColor = 'bg-slate-700';
 
-  public static bgColor = 'bg-zinc-900';
+  public static bgColor = 'bg-slate-800';
 
-  public static textBgColor = 'text-zinc-900';
+  public static textBgColor = 'text-slate-800';
 
   // Grey
-  public static bgGrayColor = 'bg-gray-700';
+  public static bgGrayColor = 'bg-gray-600';
 
-  public static borderGrayColor = 'border border-gray-700';
+  public static borderGrayColor = 'border border-gray-600';
 
-  public static borderBottomGrayColor = 'border-b border-gray-700';
+  public static borderBottomGrayColor = 'border-b border-gray-600';
   
-  public static borderTopGrayColor = 'border-t border-gray-700';
+  public static borderTopGrayColor = 'border-t border-gray-600';
 
 
 }

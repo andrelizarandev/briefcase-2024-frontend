@@ -453,7 +453,7 @@ const typsaExperience: ExperienceData = {
  
 const continentalExperience: ExperienceData = {
   titulo: "Continental / Home Office / Frontend Developer",
-  periodo: "2024 - Current",
+  periodo: "2023 - 2024",
   activities: [
     "Angular Platform Creation",
     "Automation for folder creation from the platform on GDrive",
