@@ -387,13 +387,15 @@ const technologiesData:TechnologyData[] = [
   { name:'SCSS' },
   { name:'JS' },
   { name:'TS' },
+  { name:'Angular' },
+  { name:'Rxng' },
   { name:'React' },
   { name:'Next JS' },
+  { name:'Astro' },
   { name:'Redux' },
   { name:'MUI' },
   { name:'Tailwind CSS' },
-  { name:'Angular' },
-  { name:'Rxng' },
+  { name:'Shadcn UI' },
   { name:'Prime NG' },
   
   { name:'Backend', icon:<ServerStackIcon className='h-4 w-4'/> },
@@ -403,6 +405,7 @@ const technologiesData:TechnologyData[] = [
   { name:'Db', icon:<CircleStackIcon className='h-4 w-4'/> },
   { name:'PosgreSQL' },
   { name:'Mongo DB' },
+  { name:'Supabase' },
   { name:'Firebase' },
   
   { name:'Mobile', icon:<DevicePhoneMobileIcon className='h-4 w-4'/> },
@@ -433,6 +436,7 @@ const blauCorpExperience: ExperienceData = {
     "Development of a mobile application in Kotlin (Forms, Camera, GPS, Notifications, Internal Database)",
     "Backend code maintenance",
     "Landing pages in NEXT JS with Zoho CMS",
+    'Deployment of applications Android apps',
   ],
 };
 
