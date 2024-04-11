@@ -347,7 +347,7 @@ function Footer () {
 
     <div className={`${ColorsClasses.borderTopGrayColor} ${ColorsClasses.bgColor} py-4 text-white`}>
 
-      <p className='text-center'>André Lizarán - 2021</p>
+      <p className='text-center'>André Lizarán - 2024</p>
 
     </div>
 
@@ -427,7 +427,7 @@ type ExperienceData = {
 
 const blauCorpExperience: ExperienceData = {
   titulo: "Blau Corp / Home Office / Frontend, Backend, Mobile Developer",
-  periodo: "2021 - Current",
+  periodo: "2021 - Current Job",
   activities: [
     "Creation and maintenance of a web platform in React",
     "Generation of CSV files from the platform",
