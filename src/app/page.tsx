@@ -74,7 +74,9 @@ function TopBar () {
 
         <div className='flex flex-row gap-x-4 items-center'>
 
-          <div className={`${ColorsClasses.borderGrayColor} w-10 h-10 rounded-full`}>
+          <div className={`${ColorsClasses.lighterBgColor} w-10 h-10 rounded-full flex items-center justify-center`}>
+
+            <span className='font-medium text-white'>AL</span>
 
           </div>
 
@@ -171,7 +173,7 @@ function EducationElement (props:EducationData) {
 
   return (
 
-    <div className={`rounded border flex flex-col md:flex-row flex p-3 items-center justify-between text-white ${ColorsClasses.borderGrayColor}`}>
+    <div className={`rounded border flex-col md:flex-row flex p-3 items-center justify-between text-white ${ColorsClasses.borderGrayColor}`}>
 
       <div className='text-center md:text-start pb-2 md:pb-0'>
 
