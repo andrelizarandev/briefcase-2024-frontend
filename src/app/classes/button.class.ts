@@ -7,10 +7,10 @@ import ColorsClasses from './colors.class';
 
 export default class ButtonClasses {
 
-  static commonClasses = `text-sm py-2 px-3 rounded font-semibold gap-x-2 flex gap-x-2 items-center`;
+  static commonClasses = `text-sm py-2 px-3 rounded font-medium gap-x-2 flex gap-x-2 items-center`;
 
   public static iconButton =
-    `text-white text-sm py-2 px-3 rounded-full font-semibold items-center gap-x-2 hover:bg-slate-600`;
+    `text-white text-sm py-2 px-3 rounded-full font-medium items-center gap-x-2 hover:bg-slate-600`;
 
   public static primaryButton = 
     twMerge(clsx(`${this.commonClasses} ${ColorsClasses.bgPrimaryColor} ${ColorsClasses.bgDarkerPrimaryColorHover} text-white`));

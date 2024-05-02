@@ -8,12 +8,13 @@ import "./globals.css";
 const roboto = Roboto({
   weight: '400',
   subsets: ['latin'],
-})
+});
 
+const titleSubtitle = 'Briefcase 2024 - Andre Lizarán';
 
 export const metadata: Metadata = {
-  title: "Briefcase",
-  description: "Briefcase 2024 - Andre Lizarán",
+  title: titleSubtitle,
+  description: titleSubtitle,
 };
 
 export default function RootLayout({ children }: Readonly<{ children:React.ReactNode }>) {

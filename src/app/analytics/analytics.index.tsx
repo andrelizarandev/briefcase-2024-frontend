@@ -11,10 +11,7 @@ export default function useAnalytics () {
     : null;
 
   const downloadCv = () => {
-    if (analytics) {
-      logEvent(analytics, 'download_cv')
-      console.log('Download CV');
-    }
+    if (analytics) logEvent(analytics, 'download_cv');
   };
   
   const openLinkedin = () => {

@@ -46,6 +46,8 @@ export default function page () {
 
           <TechnologiesContainer/>
 
+          <MyProjectsContainer/>
+
           <ExperienceContainer/>
 
         </div>
@@ -303,11 +305,11 @@ function ContactMeContainer () {
       icon:<ChatBubbleLeftIcon className='h-4 w-4'/>,
       action:openWhatsapp
     },
-  ]
+  ];
 
   return (
 
-    <div className='flex flex-col gap-y-2'>
+    <div className='flex flex-col gap-3'>
 
       <h3 className={TextClasses.sectionTitle}>{titlesData.contactMe}</h3>
 
@@ -338,6 +340,48 @@ function ContactMeElement (props:ContactMeData) {
       </button>
 
     </a>
+
+  )
+
+}
+
+function MyProjectsContainer () {
+
+  return (
+
+    <div className='flex gap-3 flex-col'>
+
+      <h3 className={TextClasses.sectionTitle}>My Projects</h3>
+
+      <div className='grid grid-cols-1 md:grid-cols-2 gap-3'>
+
+        {projectsData.map((row, key) => (
+
+          <div key={key} className={`rounded text-center ${ColorsClasses.borderGrayColor}`}>
+
+            <div className={`p-2 ${ColorsClasses.borderBottomGrayColor} flex flex-col items-center gap-3`}>
+
+              <h4>{row.title}</h4>
+
+            </div>
+
+            <div className='flex flex-col items-center p-3 gap-3'>
+
+              <p>{row.description}</p>
+
+              <a href={row.link} target='_blank'>
+                <button className={ButtonClasses.primaryButton}>View Project</button>
+              </a>
+
+            </div>
+            
+          </div>
+
+        ))}
+
+      </div>
+
+    </div>
 
   )
 
@@ -470,6 +514,26 @@ const experienceData:ExperienceData[] = [
   blauCorpExperience,
   typsaExperience,
   continentalExperience,
+];
+
+// Projects
+type ProjectData = {
+  title:string;
+  description:string;
+  link:string;
+}
+
+const projectsData:ProjectData[] = [
+  {
+    title:'Nanoderma Landing Page',
+    description:'Landing page for my dad business',
+    link:'https://mellifluous-brigadeiros-475196.netlify.app',
+  },
+  {
+    title:'Mi Energia MX (Work in progress)',
+    description:'Web platform for energy management',
+    link:'https://elegant-starlight-2658f9.netlify.app/',
+  }
 ];
 
 // Education
