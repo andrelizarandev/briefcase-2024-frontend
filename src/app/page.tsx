@@ -367,11 +367,19 @@ function MyProjectsContainer () {
 
             <div className='flex flex-col items-center p-3 gap-3'>
 
+            <img src={row.img} alt={row.title} className='w-full rounded'/>
+
               <p>{row.description}</p>
 
-              <a href={row.link} target='_blank'>
+              <div className='flex gap-3'>
+
+                {row.technologies.map((tech, index) => <span key={index} className={ChipClasses.whiteChip}>{tech}</span>)}
+
+              </div>
+
+              {row.link && <a href={row.link} target='_blank'>
                 <button className={ButtonClasses.primaryButton}>View Project</button>
-              </a>
+              </a>}
 
             </div>
             
@@ -520,19 +528,31 @@ const experienceData:ExperienceData[] = [
 type ProjectData = {
   title:string;
   description:string;
-  link:string;
+  link?:string;
+  img:string;
+  technologies:string[];
 }
 
 const projectsData:ProjectData[] = [
   {
-    title:'Nanoderma Landing Page',
-    description:'Landing page for my dad business',
+    title:'Nanoderma landing page',
+    description:'Landing page for my dad\'s job',
     link:'https://mellifluous-brigadeiros-475196.netlify.app',
+    img:'/images/projects/project-2.jpeg',
+    technologies:['Astro', 'Tailwind CSS', 'Supabase', 'React ']
   },
   {
-    title:'Mi Energia MX (Work in progress)',
+    title:'Mi Energia MX landing page (Work in progress)',
     description:'Web platform for energy management',
     link:'https://elegant-starlight-2658f9.netlify.app/',
+    img:'/images/projects/project-3.jpeg',
+    technologies:['Astro', 'Tailwind CSS', 'React']
+  },
+  {
+    title:'Event manager for Sodimac',
+    description:'Web platform for event management',
+    img:'/images/projects/project-1.jpeg',
+    technologies:['React', 'MUI', 'Express', 'PostgreSQL']
   }
 ];
 
