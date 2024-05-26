@@ -414,7 +414,7 @@ function Footer () {
 // About Me
 const aboutMeData = {
   subtitle:'Frontend / Mobile Developer',
-  description:'Developer focused on practicality and efficiency for the user, with the implementation of user-friendly and functional interfaces. Working in web and mobile application development for the past 3 years.',
+  description:'Computer Systems Engineer, graduated from the Technological Institute of Veracruz. At 23 years old, with 3 years of experience as a fullstack developer, I am dedicated to creating comprehensive solutions from web to mobile. I enjoy video games, volleyball, and hanging out with my friends.',
   downloadCv:'Download CV',
   downloadCvLink:'/docs/cv-andre-lizaran.pdf'
 }
