@@ -6,7 +6,12 @@ Computer Systems Engineer, graduated from the Technological Institute of Veracru
 ## Main technologies
 
 ### Web
+* HTML
+* CSS
+* Javascript / JS
+* Typescript / TS
 * React
+* Next JS
 * Angular
 * Express JS
 * Astro
@@ -14,9 +19,11 @@ Computer Systems Engineer, graduated from the Technological Institute of Veracru
 ### Mobile
 * Kotlin
 * Java
+* React Native
 
 ### DB
 * Pgsql
+* Supabase
 * MongoDB
 * Firebase
 
