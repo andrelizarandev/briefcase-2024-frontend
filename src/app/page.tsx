@@ -142,7 +142,7 @@ function AboutMe () {
       </h3>
 
       <p className='text-justify'>
-        {aboutMeData.description}
+        {aboutMeData.descriptionInEnglish}
       </p>
       
     </div>
@@ -414,7 +414,20 @@ function Footer () {
 // About Me
 const aboutMeData = {
   subtitle:'Frontend / Mobile Developer',
-  description:'Computer Systems Engineer, graduated from the Technological Institute of Veracruz. At 23 years old, with 3 years of experience as a fullstack developer, I am dedicated to creating comprehensive solutions from web to mobile. I enjoy video games, volleyball, and hanging out with my friends.',
+  description:`
+    Soy en ingeniero en Sistemas Computacionales, graduado del Tecnológico de Veracruz.
+    Tengo 23 años y tengo 4 años de experiencia como programador fullstack, 
+    Me he dedico a crear soluciones completas, desde áreas como frontend, backend, mobile, bases de datos, 
+    despliegue, pruebas, documentación y atención al cliente. 
+    Apasionado por la tecnología, disfruto de los videojuegos, el voleibol, programar y salir con amigos.
+  `,
+  descriptionInEnglish:`
+    I am a Computer Systems Engineer, graduated from the Technological Institute of Veracruz.
+    I am 23 years old with 4 years of experience as a fullstack programmer,
+    I've dedicated myself to creating complete solutions, from areas such as frontend, backend, mobile, databases,
+    deployment, testing, documentation and customer service.
+    Passionate about technology, I enjoy video games, volleyball, programming and going out with friends.
+  `,
   downloadCv:'Download CV',
   downloadCvLink:'/docs/cv-andre-lizaran.pdf'
 }
@@ -553,6 +566,12 @@ const projectsData:ProjectData[] = [
     description:'Web platform for event management',
     img:'/images/projects/project-1.jpeg',
     technologies:['React', 'MUI', 'Express', 'PostgreSQL']
+  },
+  {
+    title:'GPS locator',
+    description:'Web and mobile application for GPS location',
+    img:'/images/projects/project-4.jpeg',
+    technologies:['React', 'Shadcn UI', 'Express', 'PostgreSQL']
   }
 ];
 
