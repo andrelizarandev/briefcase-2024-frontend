@@ -19,6 +19,6 @@ export default class ButtonClasses {
     twMerge(clsx(`${this.commonClasses} ${ColorsClasses.textBgColor} bg-white hover:bg-gray-200`));
 
   public static grayButton =
-    twMerge(clsx(`${this.commonClasses} ${ColorsClasses.bgColor} ${ColorsClasses.borderGrayColor}`));
+    twMerge(clsx(`${this.commonClasses} ${ColorsClasses.bgColor} border border-gray-600`));
 
 }

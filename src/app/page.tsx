@@ -23,8 +23,10 @@ import {
   CodeBracketIcon,
   AtSymbolIcon,
   BriefcaseIcon,
-  PlusIcon
+  PlusIcon,
+  Cog6ToothIcon
 } from '@heroicons/react/16/solid';
+import ImgVisualizer from './components/img-visualizer';
 
 export default function page () {
 
@@ -86,7 +88,7 @@ function TopBar () {
 
             <h1 className={TextClasses.sectionTitle}>André Lizarán</h1>
 
-            <h2 className='font-semibold'>{aboutMeData.subtitle}</h2>
+            <h2 className='font-medium text-sm'>{aboutMeData.subtitle}</h2>
 
           </div>
 
@@ -190,7 +192,7 @@ function EducationElement (props:EducationData) {
       <img 
         src={props.logo} 
         alt='itver-logo' 
-        className={`w-20 rounded p-3 ${ColorsClasses.bgGrayColor}`}/>
+        className={`w-20 rounded p-3 ${ColorsClasses.lighterBgColor}`}/>
 
     </div>
 
@@ -367,7 +369,7 @@ function MyProjectsContainer () {
 
             <div className='flex flex-col items-center p-3 gap-3'>
 
-            <img src={row.img} alt={row.title} className='w-full rounded'/>
+              <ImgVisualizer imgs={row.imgs} isMobile={row.isMobile}/>
 
               <p>{row.description}</p>
 
@@ -413,7 +415,7 @@ function Footer () {
 
 // About Me
 const aboutMeData = {
-  subtitle:'Frontend / Mobile Developer',
+  subtitle:'Fullstack Developer',
   description:`
     Soy en ingeniero en Sistemas Computacionales, graduado del Tecnológico de Veracruz.
     Tengo 23 años y tengo 4 años de experiencia como programador fullstack, 
@@ -477,8 +479,13 @@ const technologiesData:TechnologyData[] = [
   
   { name:'Mobile', icon:<DevicePhoneMobileIcon className='h-4 w-4'/> },
   { name:'React Native' },
+  { name:'Flutter' },
   { name:'Java' },
   { name:'Kotlin' },
+
+  { name:'Testing', icon:<Cog6ToothIcon className='h-4 w-4'/> },
+  { name:'Vitest' },
+  { name:'Testing-library/react' },
 
   { name:'Extras', icon:<PlusIcon className='h-4 w-4'/> },
   { name:'Figma' },
@@ -542,8 +549,9 @@ type ProjectData = {
   title:string;
   description:string;
   link?:string;
-  img:string;
+  imgs:string[];
   technologies:string[];
+  isMobile?:boolean;
 }
 
 const projectsData:ProjectData[] = [
@@ -551,27 +559,44 @@ const projectsData:ProjectData[] = [
     title:'Nanoderma landing page',
     description:'Landing page for my dad\'s job',
     link:'https://mellifluous-brigadeiros-475196.netlify.app',
-    img:'/images/projects/project-2.jpeg',
+    imgs:[
+      '/images/projects/nanoderma/img1.jpeg',
+      '/images/projects/nanoderma/img2.jpeg',
+      '/images/projects/nanoderma/img3.jpeg',
+    ],
     technologies:['Astro', 'Tailwind CSS', 'Supabase', 'React ']
   },
   {
     title:'Mi Energia MX landing page (Work in progress)',
     description:'Web platform for energy management',
     link:'https://elegant-starlight-2658f9.netlify.app/',
-    img:'/images/projects/project-3.jpeg',
+    imgs:[
+      '/images/projects/mi-energia/img1.jpeg',
+      '/images/projects/mi-energia/img2.jpeg',
+      '/images/projects/mi-energia/img3.jpeg',
+    ],
     technologies:['Astro', 'Tailwind CSS', 'React']
   },
   {
     title:'Event manager for Sodimac',
     description:'Web platform for event management',
-    img:'/images/projects/project-1.jpeg',
+    imgs:[
+      '/images/projects/sodimac/img1.jpeg',
+      '/images/projects/sodimac/img2.jpeg',
+      '/images/projects/sodimac/img3.jpeg'
+    ],
     technologies:['React', 'MUI', 'Express', 'PostgreSQL']
   },
   {
-    title:'GPS locator',
-    description:'Web and mobile application for GPS location',
-    img:'/images/projects/project-4.jpeg',
-    technologies:['React', 'Shadcn UI', 'Express', 'PostgreSQL']
+    title:'Sporty Volleyball App',
+    description:'Java application for volleyball management',
+    imgs:[
+      '/images/projects/volleyball-sporty/img1.jpeg',
+      '/images/projects/volleyball-sporty/img2.jpeg',
+      '/images/projects/volleyball-sporty/img3.jpeg'
+    ],
+    technologies:['Java', 'Kotlin', 'Lombok'],
+    isMobile:true
   }
 ];
 

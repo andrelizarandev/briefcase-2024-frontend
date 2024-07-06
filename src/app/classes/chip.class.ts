@@ -9,7 +9,7 @@ export default class ChipClasses {
     `${this.commonProps} ${ColorsClasses.bgPrimaryColor} text-white`;
 
   static whiteChip = 
-    `${this.commonProps} ${ColorsClasses.borderGrayColor} text-white`;
+    `${this.commonProps} border border-gray-600 text-white`;
 
   static grayChip =
     `${this.commonProps} ${ColorsClasses.bgGrayColor} text-white`;

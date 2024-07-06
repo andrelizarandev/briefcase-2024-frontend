@@ -7,13 +7,7 @@ export default class ColorsClasses {
 
   public static bgPrimaryColor = 'bg-blue-700';
 
-  public static textDarkerPrimaryColor = 'text-blue-800';
-
-  public static bgDarkerPrimaryColor = 'bg-blue-800';
-
   public static bgDarkerPrimaryColorHover = 'hover:bg-blue-800';
-
-  public static borderDarkerPrimaryColor = 'border border-blue-800';
 
   // Bg
   public static lighterBgColor = 'bg-slate-700';
